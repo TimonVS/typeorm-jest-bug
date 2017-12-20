@@ -1,0 +1,41 @@
+{
+  "name": "typeorm-jest-bug",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "@types/node": "^8.0.29",
+    "jest": "^22.0.3",
+    "ts-jest": "^22.0.0",
+    "ts-node": "3.3.0",
+    "typescript": "2.5.2"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.10",
+    "sqlite3": "^3.1.10",
+    "typeorm": "0.1.7"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "/node_modules",
+      "/test/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "modulePaths": [
+      "<rootDir>/src/"
+    ]
+  }
+}
