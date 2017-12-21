@@ -13,4 +13,7 @@ export class User {
 
     @Column()
     age: number;
+
+    @Column("invalid_column_type")
+    birthday: Date;
 }

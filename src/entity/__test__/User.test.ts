@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { User } from '../User'
 import { getManager, createConnection, Connection } from 'typeorm'
 
